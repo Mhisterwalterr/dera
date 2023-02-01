@@ -1,0 +1,49 @@
+
+
+
+body{
+    background-color: blue;
+    
+}
+main{
+    font-size: 20px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: (5, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    grid-template-areas: "a a a a a"
+                         "a a a a a"
+                         "b b c d d"
+                         "e e e d d"
+                         "f g g d d";
+
+}
+
+section{
+    background-color: black;
+}
+.coloured{
+    background-color: crimson;
+}
+
+section:nth-of-type(1){
+    grid-area: a;
+}
+section:nth-of-type(2){
+    grid-area: b;
+}
+section:nth-of-type(3){
+    grid-area: c;
+}
+section:nth-of-type(4){
+    grid-area: d;
+}
+section:nth-of-type(5){
+    grid-area: e;
+}
+section:nth-of-type(6){
+    grid-area: f;
+}
+section:nth-of-type(7){
+    grid-area: g;
+}

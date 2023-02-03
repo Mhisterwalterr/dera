@@ -20,7 +20,7 @@ main{
     gap: 10px;
 }
 section{
-    /* width: 50%; */
+    /* width: 100%; */
     background-color: purple;
     /* height: 50px; */
     /* margin-top: 10px;
@@ -55,15 +55,27 @@ section:nth-of-type(5){
 }
 section:nth-of-type(6){
     grid-area: f;
-    background: repeating-radial-gradient(red 10%, white 12%);
+    background: url(./ford\ mustang.png), url(./ford\ mustang.png),url(./ford\ mustang.png),url(./ford\ mustang.png),url(./ford\ mustang.png);
+    background-position: center, top right, bottom right, top left, bottom left;
+    background-repeat: no-repeat;
 }
 section:nth-of-type(7){
     grid-area: g;
-   
+    background: url(./ford\ mustang.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
 }
 section:nth-of-type(8){
     grid-area: h;
 }
 section:nth-of-type(9){
+    grid-area: i;
+    background: url(./ford\ mustang.png);
+    opacity: 0.4;
+    /* background-color: rgba(0, 0, 0, 0.555); */
+    /* background-blend-mode: overlay; */
+}
+section:nth-of-type(9):hover{
     grid-area: i;
 }
